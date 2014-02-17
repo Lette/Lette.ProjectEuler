@@ -1,5 +1,5 @@
 ﻿
-Experimental: NuGet
+DONE Experimental: NuGet
 	DONE Create NuGet package for PEMath
 	DONE Create NuGet package for PECore
 	DONE Setup nuget feed
@@ -38,7 +38,7 @@ Publish PE code to GitHub
 		Can still have a common project site via a "parent" GitHub repo...
 	Publish example solutions (first 10?) only??
 		.gitignore? (No. Cannot have solution- or repo-specific .gitignores)
-		Maybe use submodule? (Prolle not.)
+		Maybe use submodule? (Prolly not.)
 	SKIP Publish full Solutions to separate repo
 		Private repo? 50 spänn/mo
 	SKIP Publish solutions as binary only?

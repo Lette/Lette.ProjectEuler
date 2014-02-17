@@ -1,0 +1,129 @@
+﻿
+Experimental: NuGet
+	DONE Create NuGet package for PEMath
+	DONE Create NuGet package for PECore
+	DONE Setup nuget feed
+		DONE Local? GitHub? NuGet? MyGet?
+			(Feed on https://www.myget.org/F/lette/)
+	SKIP Automate the nuget push to myget
+	DONE Use NuGet/MyGet to reference PEMath and PECore
+	DONE Create separate solution files for the individual parts
+		DONE PECore
+		DONE PEMath
+		DONE ConsoleRunner
+		DONE WpfRunner
+		DONE Solutions
+		DONE Solutions.Demo
+		DONE Put Solutions in a dropbox folder with symlink
+
+DONE Create NuGet package for Solutions.Demo (w/o tests)
+
+DONE ConsoleRunner should include a version of the solutions.demo assembly
+
+DONE WpfRunner should include a version of the solutions.demo assembly
+
+DONE How can we add the dependency to System.Numerics to the Nuget-package?
+	(With the help of the <frameworkAssembly> tag.)
+
+Move EulerDataAttribute to Core.XUnit.
+	Remove from Solutions.Tests
+	Remove from Solutions.Demo.Tests
+	
+Fix code issue in WpfRunner
+
+Publish PE code to GitHub
+	Separate repos?
+		+ Less code, more configurability
+		- Can't reuse common code (which is prolly only CommonAssemblyInfo)
+		Can still have a common project site via a "parent" GitHub repo...
+	Publish example solutions (first 10?) only??
+		.gitignore? (No. Cannot have solution- or repo-specific .gitignores)
+		Maybe use submodule? (Prolle not.)
+	SKIP Publish full Solutions to separate repo
+		Private repo? 50 spänn/mo
+	SKIP Publish solutions as binary only?
+	Extract PE Solutions to a truly separate project?
+
+DONE Create unit tests with xUnit.net that executes the solutions directly
+
+Solver/SuiteBuilder should be able to create suites from multiple assemblies
+
+Solver/SuiteBuilder should be able to create suites from executing assembly
+
+Solver/SuiteBuilder - better naming? "suite" ???
+
+Solver/SuiteBuilder should require much less code to set up in the simple case.
+	What does it take to "Get Started"? Think developer experience.
+	Create a demo project with simplest possible code required to use the framework.
+
+A solutions assembly should be allowed to have an initializer - a.k.a. 2L.Factors(); to generate the prime sieve...
+
+Make sure that the solution timer returns actual cpu time
+
+Make a better logo for Lette.ProjectEuler
+	Prolly ain't allowed to use PE favicon...
+
+Document the nuget push to myget in each projects README
+
+NuGet: Enable package restore where appropriate
+
+Rewrite GUI
+	Remove colors
+	Use different layout for display of solutions (what panel?)
+	Add some "air" (elegance?)
+
+Write tests for the Math lib.
+
+Experimental: PEMath in F#?
+
+Experimental: GUI: Load Problems/Solutions dynamically
+
+
+DONE Remove commands from code-behind and put them in view model
+	DONE Quit
+	DONE Start
+	DONE Stop
+DONE Clean up all in code-behind and move to view model and controller
+	DONE Empty the code behind
+	DONE Restructure the Controller/Solver
+	DONE Solver shouldn't know about Repo
+DONE Experimental: Rewrite parallel work to use async/await
+DONE Add DI to the mix!
+DONE Display solutions sorted on problem number always (ie. even when running in parallel)
+	(Did it in XAML using "CollectionViewSource"!)
+DONE Move PEMath to separate assembly
+DONE Wrong errors must be marked as such!!!
+DONE Fix namespaces in Wpf-app (to "Lette.*")
+DONE Add description to GUI and make it link to pe.org.
+DONE Create wrapper for static class Process
+DONE Make SolveAll truly async
+DONE Move cancellation to the Solver class
+DONE Implement a "Cancelable" variant of IProblem.Solve
+DONE Clean up the code paths for cancellable problems in Solver.
+DONE Removed separate Cancellable problem type
+SKIP Experimental: Create default implementation of ICancellableProblem
+DONE Experimental: Create command line runner
+	DONE Move Solver to separate assembly
+	DONE Create console app
+	DONE Create command line runner ("Lette.ProjectEuler.Runner Lette.ProjectEuler.Solutions")
+SKIP Separate "Problems" (mostly metadata) from "Solutions"
+DONE Move Problems/Solutions to separate assembly
+DONE Add a way for the view to indicate whether solve should be linear or parallel
+DONE Move "IsCorrect", "IsWrong" and "IsInconclusive" back into Solution class
+DONE Add "IsCanceled" to the Solution class
+DONE Handle problems that throw
+	DONE Solution should have a "Exception"-property
+	DONE ProposedAnswer should be a Nullable<long>
+	DONE A throwing solution should be considered "Faulted"
+DONE Make sure that all "IsXxx" of Solution are mutually inconclusive
+DONE Set up a CommonAssemblyInfo
+DONE No project should have a dependency on the Solutions project
+DONE Runner should work with assembly file name
+DONE ConsoleRunner should work with command line arguments
+	DONE Parse arguments
+	DONE Implement arguments
+DONE ConsoleRunner needs better exception handling
+DONE WPF: Move path to solutions assembly to app.config
+DONE WPF: Rename project to Lette.ProjectEuler.WpfRunner
+DONE Clean up problem 70
+SKIP Clean up problem 84

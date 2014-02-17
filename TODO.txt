@@ -1,17 +1,4 @@
 ﻿
-Publish PE code to GitHub
-	Separate repos?
-		+ Less code, more configurability
-		- Can't reuse common code (which is prolly only CommonAssemblyInfo)
-		Can still have a common project site via a "parent" GitHub repo...
-	Publish example solutions (first 10?) only??
-		.gitignore? (No. Cannot have solution- or repo-specific .gitignores)
-		Maybe use submodule? (Prolly not.)
-	SKIP Publish full Solutions to separate repo
-		Private repo? 50 spänn/mo
-	SKIP Publish solutions as binary only?
-	Extract PE Solutions to a truly separate project?
-
 Move EulerDataAttribute to Core.XUnit.
 	Remove from Solutions.Tests
 	Remove from Solutions.Demo.Tests
@@ -36,8 +23,6 @@ Make a better logo for Lette.ProjectEuler
 	Prolly ain't allowed to use PE favicon...
 
 Document the nuget push to myget in each projects README
-
-NuGet: Enable package restore where appropriate
 
 Rewrite GUI
 	Remove colors
@@ -115,9 +100,22 @@ DONE Experimental: NuGet
 		DONE WpfRunner
 		DONE Solutions
 		DONE Solutions.Demo
-		DONE Put Solutions in a dropbox folder with symlink
+		DONE Put Solutions in a dropbox folder with symlink/junction
 DONE Create NuGet package for Solutions.Demo (w/o tests)
 DONE ConsoleRunner should include a version of the solutions.demo assembly
 DONE WpfRunner should include a version of the solutions.demo assembly
 DONE How can we add the dependency to System.Numerics to the Nuget-package?
 	(With the help of the <frameworkAssembly> tag.)
+DONE Publish PE code to GitHub
+	YES Separate repos?
+		+ Less code, more configurability
+		- Can't reuse common code (which is prolly only CommonAssemblyInfo)
+		NO Can still have a common project site via a "parent" GitHub repo...
+	YES Publish example solutions (first 10?) only??
+		NO .gitignore? (No. Cannot have solution- or repo-specific .gitignores)
+		No Maybe use submodule? (Prolly not.)
+	SKIP Publish full Solutions to separate repo
+		NO Private repo? 5€/mo
+	SKIP Publish solutions as binary only?
+	YES Extract PE Solutions to a truly separate project?
+DONE NuGet: Enable package restore where appropriate

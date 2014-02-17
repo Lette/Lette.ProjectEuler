@@ -1,36 +1,4 @@
 ﻿
-DONE Experimental: NuGet
-	DONE Create NuGet package for PEMath
-	DONE Create NuGet package for PECore
-	DONE Setup nuget feed
-		DONE Local? GitHub? NuGet? MyGet?
-			(Feed on https://www.myget.org/F/lette/)
-	SKIP Automate the nuget push to myget
-	DONE Use NuGet/MyGet to reference PEMath and PECore
-	DONE Create separate solution files for the individual parts
-		DONE PECore
-		DONE PEMath
-		DONE ConsoleRunner
-		DONE WpfRunner
-		DONE Solutions
-		DONE Solutions.Demo
-		DONE Put Solutions in a dropbox folder with symlink
-
-DONE Create NuGet package for Solutions.Demo (w/o tests)
-
-DONE ConsoleRunner should include a version of the solutions.demo assembly
-
-DONE WpfRunner should include a version of the solutions.demo assembly
-
-DONE How can we add the dependency to System.Numerics to the Nuget-package?
-	(With the help of the <frameworkAssembly> tag.)
-
-Move EulerDataAttribute to Core.XUnit.
-	Remove from Solutions.Tests
-	Remove from Solutions.Demo.Tests
-	
-Fix code issue in WpfRunner
-
 Publish PE code to GitHub
 	Separate repos?
 		+ Less code, more configurability
@@ -44,7 +12,11 @@ Publish PE code to GitHub
 	SKIP Publish solutions as binary only?
 	Extract PE Solutions to a truly separate project?
 
-DONE Create unit tests with xUnit.net that executes the solutions directly
+Move EulerDataAttribute to Core.XUnit.
+	Remove from Solutions.Tests
+	Remove from Solutions.Demo.Tests
+	
+Fix code issue in WpfRunner
 
 Solver/SuiteBuilder should be able to create suites from multiple assemblies
 
@@ -56,7 +28,7 @@ Solver/SuiteBuilder should require much less code to set up in the simple case.
 	What does it take to "Get Started"? Think developer experience.
 	Create a demo project with simplest possible code required to use the framework.
 
-A solutions assembly should be allowed to have an initializer - a.k.a. 2L.Factors(); to generate the prime sieve...
+A solution's assembly should be allowed to have an initializer - a.k.a. 2L.Factors(); to generate the prime sieve...
 
 Make sure that the solution timer returns actual cpu time
 
@@ -127,3 +99,25 @@ DONE WPF: Move path to solutions assembly to app.config
 DONE WPF: Rename project to Lette.ProjectEuler.WpfRunner
 DONE Clean up problem 70
 SKIP Clean up problem 84
+DONE Create unit tests with xUnit.net that executes the solutions directly
+DONE Experimental: NuGet
+	DONE Create NuGet package for PEMath
+	DONE Create NuGet package for PECore
+	DONE Setup nuget feed
+		DONE Local? GitHub? NuGet? MyGet?
+			(Feed on https://www.myget.org/F/lette/)
+	SKIP Automate the nuget push to myget
+	DONE Use NuGet/MyGet to reference PEMath and PECore
+	DONE Create separate solution files for the individual parts
+		DONE PECore
+		DONE PEMath
+		DONE ConsoleRunner
+		DONE WpfRunner
+		DONE Solutions
+		DONE Solutions.Demo
+		DONE Put Solutions in a dropbox folder with symlink
+DONE Create NuGet package for Solutions.Demo (w/o tests)
+DONE ConsoleRunner should include a version of the solutions.demo assembly
+DONE WpfRunner should include a version of the solutions.demo assembly
+DONE How can we add the dependency to System.Numerics to the Nuget-package?
+	(With the help of the <frameworkAssembly> tag.)

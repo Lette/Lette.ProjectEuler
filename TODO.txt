@@ -1,8 +1,7 @@
-﻿
-Move EulerDataAttribute to Core.XUnit.
-	Remove from Solutions.Tests
-	Remove from Solutions.Demo.Tests
-	
+﻿	
+Cleanup EulerDataAttribute
+	Force usage of parameter filename
+
 Fix code issue in WpfRunner
 
 Solver/SuiteBuilder should be able to create suites from multiple assemblies
@@ -119,3 +118,7 @@ DONE Publish PE code to GitHub
 	SKIP Publish solutions as binary only?
 	YES Extract PE Solutions to a truly separate project?
 DONE NuGet: Enable package restore where appropriate
+DONE Move EulerDataAttribute to Core.XUnit.
+	DONE Create Core.XUnit and put EulerDataAttribute there
+	DONE Remove from Solutions.Tests
+	DONE Remove from Solutions.Demo.Tests
